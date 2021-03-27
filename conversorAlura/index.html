@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" type="text/css" href="styles2.css" media="screen" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Imersão Dev - Aula 01
+  </title>
+
+ <script>
+    var pesoAtualTexto = prompt("Quanto você pesa no seu planeta atual?")
+    var pesoAtualNumero = parseFloat(pesoAtualTexto)
+    var pesoNaLua = pesoAtualNumero / 9.81 * 1.622
+    var pesoEmMarte = pesoAtualNumero / 9.81 * 3.711 
+    var pesoEmVênus = pesoAtualNumero * 0.91
+    var pesoEmJúpiter = pesoAtualNumero * 2.34
+
+    var planetaEscolhido = prompt("Escolha um dos planetas para saber o seu peso:  " + "1 - Marte | 2 - Júpiter | 3 - Vênus | 4 - Lua ")
+
+    if(planetaEscolhido == 1 ){
+          document.write("<h2>" + "Seu peso em Marte seria de:  " + pesoEmMarte.toFixed(1)  + "Kg"+ "</h2>");
+    } else if(planetaEscolhido == 2){
+          document.write("<h2>" + "Seu peso em Júpiter seria de:  " + pesoEmJúpiter.toFixed(1)  + "Kg"+ "</h2>");
+    } else if(planetaEscolhido == 3){
+          document.write("<h2>" + "Seu peso em Vênus seria de:  " + pesoEmVênus.toFixed(1)  + "Kg"+ "</h2>");
+    } else if(planetaEscolhido == 4){
+          document.write("<h2>" + "Seu peso na Lua seria de:  " + pesoNaLua.toFixed(1)  + "Kg"+ "</h2>");
+    } else {
+      document.write("<h2>" + "Você não escolheu um número válido ):" + "</h2>" );
+  } 
+
+  </script> 
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="page-title">
+     <strong>Conversor de Peso ☾</strong>
+    </h1>
+    <p class="page-subtitle">
+      Descubra quanto você pesaria em outro planeta 🪐🌎🌑☀️🌟
+    </p>   
+    <a href="https://www.linkedin.com/in/vit%C3%B3ria-ferreira-1178841aa/" target="_blank">
+      <img src="iconsvg.png" alt="" class="vkf-logo">
+    </a>
+   </div>
+    <h2></h2>
+
+  <div class="container-modal">
+  <div class="modal"><div>
+
+  </div>
+</body>
+
+</html>
